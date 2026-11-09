@@ -1,0 +1,9 @@
+== example ==
+  3.1 결과=GBRG, 메타(raw_pattern)=GBRG, 메타(visible)=GBRG
+  문자열 일치=True, 마스크 배열 일치=True
+== example2 ==
+  3.1 결과=GBRG, 메타(raw_pattern)=GBRG, 메타(visible)=GBRG
+  문자열 일치=True, 마스크 배열 일치=True
+== example3 ==
+  3.1 결과=GBRG, 메타(raw_pattern)=GBRG, 메타(visible)=GBRG
+  문자열 일치=True, 마스크 배열 일치=True

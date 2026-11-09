@@ -1,0 +1,18 @@
+== example ==  mean gray (before) = 0.0715
+  original   alpha=1.000  mean gray=0.0715  clipped=0.67%
+  m=0.15     alpha=2.098  mean gray=0.1421  clipped=1.73%
+  m=0.20     alpha=2.798  mean gray=0.1844  clipped=3.11%
+  m=0.25     alpha=3.497  mean gray=0.2240  clipped=4.71%
+  m=0.30     alpha=4.196  mean gray=0.2612  clipped=6.58%
+== example2 ==  mean gray (before) = 0.1753
+  original   alpha=1.000  mean gray=0.1753  clipped=3.12%
+  m=0.15     alpha=0.856  mean gray=0.1500  clipped=0.00%
+  m=0.20     alpha=1.141  mean gray=0.1970  clipped=4.82%
+  m=0.25     alpha=1.426  mean gray=0.2369  clipped=7.92%
+  m=0.30     alpha=1.712  mean gray=0.2716  clipped=10.51%
+== example3 ==  mean gray (before) = 0.1959
+  original   alpha=1.000  mean gray=0.1959  clipped=10.63%
+  m=0.15     alpha=0.766  mean gray=0.1500  clipped=0.00%
+  m=0.20     alpha=1.021  mean gray=0.1989  clipped=11.21%
+  m=0.25     alpha=1.276  mean gray=0.2339  clipped=16.68%
+  m=0.30     alpha=1.532  mean gray=0.2664  clipped=16.88%

@@ -1,0 +1,12 @@
+== example ==
+  mine               shape=(3060, 4080, 3)  mean=0.417  std=0.180  sharpness=0.0240
+  rawpy postprocess  shape=(3060, 4080, 3)  mean=0.265  std=0.162  sharpness=0.0264
+  camera JPEG        shape=(3000, 4000, 3)  mean=0.217  std=0.146  sharpness=0.0148
+== example2 ==
+  mine               shape=(3060, 4080, 3)  mean=0.408  std=0.223  sharpness=0.0219
+  rawpy postprocess  shape=(4080, 3060, 3)  mean=0.332  std=0.229  sharpness=0.0273
+  camera JPEG        shape=(3000, 4000, 3)  mean=0.356  std=0.239  sharpness=0.0266
+== example3 ==
+  mine               shape=(3060, 4080, 3)  mean=0.402  std=0.232  sharpness=0.0140
+  rawpy postprocess  shape=(4080, 3060, 3)  mean=0.347  std=0.247  sharpness=0.0164
+  camera JPEG        shape=(3000, 4000, 3)  mean=0.370  std=0.253  sharpness=0.0289

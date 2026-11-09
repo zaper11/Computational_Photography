@@ -1,0 +1,15 @@
+== example ==
+  none         gains (R, G, B) = (1.000, 1.000, 1.000)
+  gray-world   gains (R, G, B) = (1.701, 1.000, 1.992)
+  white-world  gains (R, G, B) = (1.744, 1.000, 1.940)
+  camera       gains (R, G, B) = (1.744, 1.000, 1.943)
+== example2 ==
+  none         gains (R, G, B) = (1.000, 1.000, 1.000)
+  gray-world   gains (R, G, B) = (1.077, 1.000, 3.291)
+  white-world  gains (R, G, B) = (1.171, 1.000, 2.923)
+  camera       gains (R, G, B) = (1.172, 1.000, 2.926)
+== example3 ==
+  none         gains (R, G, B) = (1.000, 1.000, 1.000)
+  gray-world   gains (R, G, B) = (2.079, 1.000, 1.375)
+  white-world  gains (R, G, B) = (1.822, 1.000, 1.558)
+  camera       gains (R, G, B) = (1.825, 1.000, 1.559)

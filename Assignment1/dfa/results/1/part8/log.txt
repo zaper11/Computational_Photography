@@ -1,0 +1,9 @@
+== example ==
+  mean (linear)  = 0.1832
+  mean (encoded) = 0.4137
+== example2 ==
+  mean (linear)  = 0.1902
+  mean (encoded) = 0.3976
+== example3 ==
+  mean (linear)  = 0.2047
+  mean (encoded) = 0.4048
