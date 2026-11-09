@@ -1,0 +1,10 @@
+== office ==
+6 exposures: 1/30, 1/10, 1/3, 0.625, 1.3, 4
+image 903x600, N=1000 sampled pixels, P=6
+A shape = (6255, 1256)
+lambda=1     : weighted data residual RMS (R,G,B) = 0.0201, 0.0202, 0.0221 | mean |d2 g| = 0.0400
+lambda=10    : weighted data residual RMS (R,G,B) = 0.0204, 0.0205, 0.0225 | mean |d2 g| = 0.0126
+lambda=50.0  : weighted data residual RMS (R,G,B) = 0.0206, 0.0206, 0.0227 | mean |d2 g| = 0.0050
+lambda=100   : weighted data residual RMS (R,G,B) = 0.0206, 0.0207, 0.0227 | mean |d2 g| = 0.0033
+lambda=1000  : weighted data residual RMS (R,G,B) = 0.0208, 0.0208, 0.0229 | mean |d2 g| = 0.0011
+linearized.png: rows = LDR / exp(g(I)) / exp(g(I))/dt  (display gamma 2.2)

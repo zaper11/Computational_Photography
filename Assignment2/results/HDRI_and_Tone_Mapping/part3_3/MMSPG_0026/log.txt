@@ -1,0 +1,3 @@
+== MMSPG_0026 ==
+shape=1920x1080, log-average luminance=79.32, max(L) (scaled, key=0.18) = 4.806
+saved full-resolution results: Reinhard B=1.0, Logarithmic beta=10

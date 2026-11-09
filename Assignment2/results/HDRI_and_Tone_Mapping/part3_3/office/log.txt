@@ -1,0 +1,3 @@
+== office ==
+shape=903x600, log-average luminance=0.8599, max(L) (scaled, key=0.18) = 6.414
+saved full-resolution results: Reinhard B=1.0, Logarithmic beta=10

@@ -1,0 +1,2 @@
+== palace ==  shape=(2000, 1500, 3)
+  mapping range: 0 ~ 255, monotonic=True

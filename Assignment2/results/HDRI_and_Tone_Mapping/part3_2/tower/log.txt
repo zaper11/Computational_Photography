@@ -1,0 +1,9 @@
+== tower ==
+3 exposures: 1, 2, 4 | CRF lambda=50
+  uniform  : pixels with sum(w)=0 -> fallback: 1.634%
+  tent     : pixels with sum(w)=0 -> fallback: 1.634%
+  gaussian : pixels with sum(w)=0 -> fallback: 1.634%
+saved tower.hdr (weight=tent), re-read shape=(512, 341, 3), dynamic range (0.1~99.9 percentile) = 5.5 stops
+  |log2 E_uniform - log2 E_tent| : mean=0.0053 stops, 99.9 percentile=0.071 stops
+  |log2 E_gaussian - log2 E_tent| : mean=0.0021 stops, 99.9 percentile=0.030 stops
+  crop A (max diff) y=214, x=0 | crop B (dark) y=377, x=54 | size=96px

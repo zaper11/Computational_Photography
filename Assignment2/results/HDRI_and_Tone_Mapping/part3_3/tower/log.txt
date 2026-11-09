@@ -1,0 +1,3 @@
+== tower ==
+shape=341x512, log-average luminance=0.3206, max(L) (scaled, key=0.18) = 1.817
+saved full-resolution results: Reinhard B=1.0, Logarithmic beta=10

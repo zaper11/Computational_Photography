@@ -1,0 +1,9 @@
+== image_1 ==
+9 exposures: 1/500, 1/320, 1/200, 1/100, 1/60, 1/40, 1/15, 1/10, 1/6 | CRF lambda=50
+  uniform  : pixels with sum(w)=0 -> fallback: 1.420%
+  tent     : pixels with sum(w)=0 -> fallback: 1.420%
+  gaussian : pixels with sum(w)=0 -> fallback: 1.420%
+saved image_1.hdr (weight=tent), re-read shape=(3648, 5472, 3), dynamic range (0.1~99.9 percentile) = 10.8 stops
+  |log2 E_uniform - log2 E_tent| : mean=0.0405 stops, 99.9 percentile=0.324 stops
+  |log2 E_gaussian - log2 E_tent| : mean=0.0175 stops, 99.9 percentile=0.162 stops
+  crop A (max diff) y=2685, x=213 | crop B (dark) y=2870, x=3281 | size=218px
