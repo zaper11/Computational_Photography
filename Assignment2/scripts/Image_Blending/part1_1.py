@@ -119,10 +119,9 @@ if __name__ == '__main__':
 
         err = np.abs(rec - img)
         mse = np.mean((rec - img) ** 2)
-        psnr = np.inf if mse == 0 else 10 * np.log10(1 / mse)
         log(f'== {name} ==', LOG)
         log('  levels: ' + ', '.join(f'{g.shape[0]}x{g.shape[1]}' for g in G), LOG)
-        log(f'  reconstruction: max|err|={err.max():.2e} MSE={mse:.2e} PSNR={psnr:.1f} dB', LOG)
+        log(f'  reconstruction: max|err|={err.max():.2e} MSE={mse:.2e}', LOG)
 
         # 1) Gaussian / Laplacian pyramid
         fig, ax = plt.subplots(2, DEPTH, figsize=(3 * DEPTH, 6.5))

@@ -8,12 +8,12 @@ from HDRI_and_Tone_Mapping.hdr_common import (DATASETS, load_bracket, load_ldr,
                                               w_unif, w_tent, w_gaussian, dt_label)
 
 BASE = '/home/juneyoung-yoon/Desktop/Computational_Photography/Assignment2/results/HDRI_and_Tone_Mapping'
-CRF_DIR = f'{BASE}/part3_1'     # part3_1.py가 저장한 crf.npz
+CRF_DIR = f'{BASE}/part3_1'
 OUT_DIR = f'{BASE}/part3_2'
 
 EPS = 1e-6
 WEIGHTS = {'uniform': w_unif, 'tent': w_tent, 'gaussian': w_gaussian}
-CHOSEN = {'image_1': 'tent', 'office': 'tent', 'tower': 'tent'}   # .hdr로 저장할 가중치
+CHOSEN = {'image_1': 'tent', 'office': 'tent', 'tower': 'tent'}
 THUMB_WIDTH = 600
 
 
@@ -21,22 +21,23 @@ def merge_hdr(paths, dts, g):
     # I_HDR = exp( sum_j w(I_ij) (log(I_ij,lin + eps) - log dt_j) / sum_j w(I_ij) ),  I_lin = exp(g(I))
     # w, log(I_lin + eps)는 8-bit 값에만 의존하므로 lookup table로 계산한다.
     z = np.arange(256) / 255
-    log_lin = np.log(np.exp(g) + EPS).astype(np.float32)                 # (3, 256)
-    wl = {k: f(z).astype(np.float32) for k, f in WEIGHTS.items()}        # 가중치 LUT (256,)
+    log_lin = np.log(np.exp(g) + EPS).astype(np.float32)
+    wl = {k: f(z).astype(np.float32) for k, f in WEIGHTS.items()}
     dist = np.abs(z - 0.5).astype(np.float32)
 
     first = load_ldr(paths[0])
     H, W = first.shape[:2]
     num = {k: np.zeros((3, H, W), np.float32) for k in WEIGHTS}
     den = {k: np.zeros((3, H, W), np.float32) for k in WEIGHTS}
-    best = np.full((3, H, W), np.inf, np.float32)   # 가중치 합이 0인 픽셀용: z가 0.5에 가장 가까운 노출의 값
+    best = np.full((3, H, W), np.inf, np.float32)
     fallback = np.zeros((3, H, W), np.float32)
 
     for j, (p, dt) in enumerate(zip(paths, dts)):
         img = first if j == 0 else load_ldr(p)
         for c in range(3):
             v = img[..., c]
-            term = log_lin[c][v] - np.float32(np.log(dt))    # log(I_lin + eps) - log dt_j
+            # log(I_lin + eps) - log dt_j
+            term = log_lin[c][v] - np.float32(np.log(dt))
             for k in WEIGHTS:
                 w = wl[k][v]
                 num[k][c] += w * term

@@ -12,11 +12,11 @@ OUT_DIR = '/home/juneyoung-yoon/Desktop/Computational_Photography/Assignment2/re
 LOG = f'{OUT_DIR}/log.txt'
 
 ALPHAS = [1.0, 2.0, 3.0, 4.0]
-SIGMA = 1.4                 # alpha 비교에 쓰는 기본 sigma
-SIGMAS = [0.5, 1.0, 2.0, 3.0]  # sigma 비교 (alpha 고정)
+SIGMA = 1.4
+SIGMAS = [0.5, 1.0, 2.0, 3.0]
 ALPHA_FIXED = 1.5
 CROP = 128
-CROP_DY = -250  # 크롭 위치를 중앙에서 위(-)/아래(+)로 이동 (px)
+CROP_DY = -250
 
 
 def kernel_size(sigma):

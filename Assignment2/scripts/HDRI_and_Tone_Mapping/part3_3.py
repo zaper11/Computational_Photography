@@ -9,15 +9,18 @@ from HDRI_and_Tone_Mapping.hdr_common import DATASETS, HDRI_DIR, load_bracket, l
 BASE = '/home/juneyoung-yoon/Desktop/Computational_Photography/Assignment2/results/HDRI_and_Tone_Mapping'
 OUT_DIR = f'{BASE}/part3_3'
 
-# part3_2에서 저장한 HDR 3개 + 제공된 HDR 이미지 (c) MMSPG_0026.hdr
 SOURCES = {n: f'{BASE}/part3_2/{n}/{n}.hdr' for n in DATASETS}
 SOURCES['MMSPG_0026'] = f'{HDRI_DIR}/MMSPG_0026.hdr'
 
-KEY = 0.18                        # scaled luminance의 key value a, 수업에서 얘기한 일반적으로 사용하는 값은 a = 0.18
+# scaled luminance의 key value a, 수업에서 얘기한 일반적으로 사용하는 값은 a = 0.18
+KEY = 0.18  
 DELTA = 1e-6
-B_LIST = [0.1, 0.25, 0.5, 1.0]    # Reinhard: Lwhite = B * max(L)
-BETA_LIST = [1, 10, 100, 1000]    # Logarithmic
-CHOSEN = {name: (1.0, 10) for name in SOURCES}   # (B, beta): 전체 해상도로 저장할 설정
+# Reinhard: Lwhite = B * max(L)
+B_LIST = [0.1, 0.25, 0.5, 1.0]
+# Logarithmic
+BETA_LIST = [1, 10, 100, 1000]
+# (B, beta): 전체 해상도로 저장할 설정
+CHOSEN = {name: (1.0, 10) for name in SOURCES}
 THUMB_WIDTH = 600
 LUM = np.array([0.2126, 0.7152, 0.0722], dtype=np.float32)
 

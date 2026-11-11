@@ -1,6 +1,6 @@
 == apple ==
   levels: 512x512, 256x256, 128x128, 64x64, 32x32, 16x16, 8x8
-  reconstruction: max|err|=2.22e-16 MSE=1.40e-36 PSNR=358.5 dB
+  reconstruction: max|err|=2.22e-16 MSE=1.40e-36
 == orange ==
   levels: 512x512, 256x256, 128x128, 64x64, 32x32, 16x16, 8x8
-  reconstruction: max|err|=1.11e-16 MSE=1.29e-37 PSNR=368.9 dB
+  reconstruction: max|err|=1.11e-16 MSE=1.29e-37
